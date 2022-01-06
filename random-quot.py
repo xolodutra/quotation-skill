@@ -1,3 +1,5 @@
+quot = 'Летим и замираем перед краем – У пропасти, где не нащупать дна. Нет на земле ни ада и ни рая –  Поэзия и музыка одна.Как жаль, что мы судьбу не выбираем. Как жаль, что выбирает нас она. (Дарья Ильгова)'
+
 def handler(event, context):
     """
     Entry-point for Serverless Function.
@@ -9,7 +11,7 @@ def handler(event, context):
     if 'request' in event and \
             'original_utterance' in event['request'] \
             and len(event['request']['original_utterance']) > 0:
-        text = event['request']['original_utterance']
+        text = quot
     return {
         'version': event['version'],
         'session': event['session'],
