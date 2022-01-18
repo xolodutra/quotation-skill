@@ -1,0 +1,1 @@
+web: gunicorn quotation_skill:app
