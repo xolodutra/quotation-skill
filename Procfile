@@ -1,1 +1,1 @@
-web: gunicorn quotation_skill:app
+web: gunicorn quotation_skill:quotation_skill
