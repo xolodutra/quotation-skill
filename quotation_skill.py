@@ -44,4 +44,7 @@ def respond():
     }
     return response
 
-app.run(host='0.0.0.0', port=5000, debug=True)
+# app.run(host='0.0.0.0', port=5000, debug=True)
+
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
